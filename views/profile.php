@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>{{user.FIRST_NAME}} {{user.LAST_NAME}}</title>
-        <link rel="icon" href="../../graphics/icons/globe.png"/>
+        <link rel="icon" href="../graphics/icons/story.png"/>
         <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/create-article.css" rel="stylesheet">
         <link href="../../css/common.css" rel="stylesheet">
@@ -10,30 +10,36 @@
         <link href="../../css/profile.css" rel="stylesheet">
     </head>
     <header>
-        <div class="navbar navbar-dark" style="background-color: rgb(13, 25, 44);">
-            <div class="container row login-row">
-                <a href="./0" class="link-style-light">Profile</a>
-            </div>
-        </div>
-        <div class="navbar navbar-dark" style="background-color: rgb(13, 25, 44);">
+        <div class="navbar navbar-dark" style="background-color: #2F4F4F;">
             <div class="container">
-                <a href="../" class="navbar-brand column">
-                    <img src="../../graphics/icons/globe.png" width="50px" height="50px"/>
-                    <strong>World Wide News</strong>
-                </a>
-                <form>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="search">
-                        <div class="input-group-btn">
-                            <input class="btn btn-light" width="50px" height="40px" type="image" src="../../graphics/icons/search.png"></input>
+                <div class="row flex-fill justify-content-between">
+                    <div class="col-md-auto">
+                        <a href="../" class="navbar-brand">
+                            <img src="../../graphics/icons/story.png" width="40px" height="40px" />
+                            <strong>Story Line</strong>
+                        </a>
+                    </div>
+                    <div class="col-md-auto search">
+                        <form >
+                            <div class="input-group" >
+                                <input type="text" class="form-control" placeholder="Search" name="search">
+                                <div class="input-group-btn">
+                                    <input class="btn btn-light" width="50px" height="40px" type="image" src="../../graphics/icons/search.png"></input>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-auto">
+                        <div>
+                            <a href="./0" class="link-style-light"><img src="../../graphics/icons/profile.png"/></a>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-        <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg" style="background-color: rgb(13, 25, 44);">
+        <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg" style="background-color: #2F4F4F;">
             <li class="nav-item">
-                <a class="nav-link" href="allNews.html">General news</a>
+                <a class="nav-link" href="../all">General news</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="allNews.html">Popular</a>
@@ -54,12 +60,11 @@
     </header>
     <body>
         <div class="py-5 container">
-            <div class="row">
-                <div class="col-md-auto shadow-lg">
+            <div class="row justify-content-center">
                     <div class="col-md-auto add-profile-img">
                         <img src="../../graphics/icons/camera.png" width="80px" height="80px">
                     </div>
-                    <div class="row profile-articles">
+                    <!-- <div class="row profile-articles">
                         <div class="row">
                             <div class="col-md-auto profile-info">
                                 
@@ -92,8 +97,18 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-auto shadow-lg profile-about-div">
+                    <div class="row name-row">
+                        <div class="col-md-auto">
+                            <h1>{{user.FIRST_NAME}} {{user.LAST_NAME}}</h1>
+                        </div>
+                    </div>
+                    <div class="row type-row">
+                        <div class="col-md-auto">
+                            <h4>Author</h4>
+                        </div>
+                    </div>
                     <div class="row profile-about">
                         <strong>ABOUT</strong>
                     </div>
@@ -120,10 +135,26 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <strong>Website</strong>
+                                        <strong>Gender</strong>
                                     </div>
                                     <div class="col-md-auto">
-                                        <label>{{user.WEBSITE}}</label>
+                                        <label>{{user.GENDER}}</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <strong>DoB</strong>
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <label>{{user.DOB}}</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <strong>Country</strong>
+                                    </div>
+                                    <div class="col-md-auto">
+                                        <label>{{user.COUNTRY}}</label>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +167,7 @@
                         <label>{{user.DESCRIPTION}}</label>
                     </div>
                     <div class="row profile-about">
-                        <strong>ARTICLES</strong>
+                        <strong>STORIES</strong>
                     </div>
                     <div class="row profile-articles">
                         <div class="column article-preview" name="preview1">
@@ -146,7 +177,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="article-preview-title">Title</p>
-                                    <p>This is a placeholder for the text of the article preview.</p>
+                                    <p>This is a placeholder for the text of the story preview.</p>
                                 </div>
                             </div>
                             <div class="row article-row">
@@ -166,7 +197,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="article-preview-title">Title</p>
-                                    <p>This is a placeholder for the text of the article preview.</p>
+                                    <p>This is a placeholder for the text of the story preview.</p>
                                 </div>
                             </div>
                             <div class="row article-row">
@@ -186,7 +217,7 @@
                                 </div>
                                 <div class="col">
                                     <p class="article-preview-title">Title</p>
-                                    <p>This is a placeholder for the text of the article preview.</p>
+                                    <p>This is a placeholder for the text of the story preview.</p>
                                 </div>
                             </div>
                             <div class="row article-row">
