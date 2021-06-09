@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>World Wide News</title>
+        <title>Story Lines</title>
         <link rel="icon" href="graphics/icons/globe.png"/>
         <link href="./css/bootstrap.min.css" rel="stylesheet">
         <link href="./article.css" rel="stylesheet">
@@ -9,24 +9,30 @@
     </head>
     <header>
         <div class="navbar navbar-dark" style="background-color: rgb(13, 25, 44);">
-            <div class="container row login-row">
-                <a href="log-in.html" class="link-style-light">Login/ Register</a>
-            </div>
-        </div>
-        <div class="navbar navbar-dark" style="background-color: rgb(13, 25, 44);">
-            <div class="container">
-                <a href="./index.php" class="navbar-brand column">
-                    <img src="graphics/icons/globe.png" width="50px" height="50px"/>
-                    <strong>World Wide News</strong>
-                </a>
-                <form>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" name="search">
-                        <div class="input-group-btn">
-                            <input class="btn btn-light" width="50px" height="40px" type="image" src="./graphics/icons/search.png"></input>
+        <div class="container">
+            <div class="row flex-fill justify-content-between">
+                <div class="col-md-auto">
+                    <a href="./" class="navbar-brand">
+                        <img src="../graphics/icons/story.png" width="40px" height="40px" />
+                        <strong>Story Line</strong>
+                    </a>
+                </div>
+                <div class="col-md-auto search">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="search">
+                            <div class="input-group-btn">
+                                <input class="btn btn-light" width="50px" height="40px" type="image"
+                                    src="../graphics/icons/search.png"></input>
+                            </div>
                         </div>
+                    </form>
+                </div>
+                <div class="col-md-auto">
+                    <div>
+                        <a href="log-in.html" class="link-style-light">Login/ Register</a>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
         <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg" style="background-color: rgb(13, 25, 44);">

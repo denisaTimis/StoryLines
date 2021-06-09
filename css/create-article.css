@@ -4,8 +4,9 @@
     margin-left: 50px;
     margin-bottom: 50px;
     width: 90%;
-    background-color: transparent;
-    border-width: 0 0 0 0;
+    background-color: #2f4f4f57;
+    border-width: 0px 0px 2px 0px;
+    border-color: black;
 }
 
 .title-style:focus{
@@ -18,7 +19,7 @@
     margin-left: 50px;
     height: 100%;
     width: 90%;
-    background-color: transparent;
+    background-color: #2c4b4b59;
     display: block;
     overflow: hidden;
     resize: both;
@@ -30,9 +31,18 @@
 
 .textarea[contenteditable]:empty::before {
     content: "New paragraph...";
-    color: gray;
+    color: black;
 }
 
 .save-colum{
-    text-align: right;
+    text-align: center;
+}
+
+.responsMenuBtn:focus
+{
+  box-shadow: none;
+  
+}
+.dropdown-toggle::after {
+  display:none;
 }

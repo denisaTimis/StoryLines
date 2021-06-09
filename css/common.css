@@ -6,6 +6,7 @@ body{
     border-style: solid;
     border-color: black;
     border-width: 0px 4px 4px 4px;
+    background-color: #2f4f4f31;
 }
 
 .nav-link{
@@ -26,6 +27,7 @@ body{
 
 .link-style{
     color:black;
+    font-weight:bolder;
 }
 
 .link-style:hover{
