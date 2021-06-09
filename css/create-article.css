@@ -1,0 +1,38 @@
+.title-style{
+    height: 80px;
+    font-size: 70px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+    background-color: transparent;
+    border-width: 0 0 0 0;
+}
+
+.title-style:focus{
+    outline-width: 0;
+    border-width: 0 0 2px 0;
+}
+
+.paragraph-style{
+    font-size: large;
+    margin-left: 50px;
+    height: 100%;
+    width: 90%;
+    background-color: transparent;
+    display: block;
+    overflow: hidden;
+    resize: both;
+}
+
+.textarea:focus{
+    border: 1px solid black;
+}
+
+.textarea[contenteditable]:empty::before {
+    content: "New paragraph...";
+    color: gray;
+}
+
+.save-colum{
+    text-align: right;
+}
