@@ -19,6 +19,7 @@
 .profile-about-div
 {
     margin-left: 30px;
+    padding-left: 45px;
 }
 
 .profile-articles
@@ -32,4 +33,13 @@
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     margin-left: 20px;
+}
+
+.name-row{
+    margin-top: 20px;
+}
+
+.type-row
+{
+    margin-top: 5px;
 }
