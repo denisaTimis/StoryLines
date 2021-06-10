@@ -27,12 +27,12 @@
                                     <input class="btn btn-light" width="50px" height="40px" type="image" src="../../graphics/icons/search.png"></input>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-md-auto">
-                        <div>
-                            <a href="./0" class="link-style-light"><img src="../../graphics/icons/profile.png"/></a>
                         </div>
+                    </form>
+                </div>
+                <div class="col-md-auto">
+                    <div>
+                        <a href="./0" class="link-style-light"><img src="../../graphics/icons/profile.png" /></a>
                     </div>
                 </div>
             </div>
@@ -75,64 +75,88 @@
                             <h4>Author</h4>
                         </div>
                     </div>
-                    <div class="row profile-about">
-                        <strong>ABOUT</strong>
+                </div>
+                <div class="row type-row">
+                    <div class="col-md-auto">
+                        <h4>Author</h4>
                     </div>
-                    <div class="row profile-articles">
-                        <div class="row">
-                            <div class="col-md-auto">
-                                <div class="row">
-                                    <div class="col">
-                                        <strong>Email</strong>
-                                    </div>
-                                    <div class="col-md-auto">
-                                        <label>{{user.EMAIL}}</label>
-                                    </div>
+                </div>
+                <div class="row profile-about">
+                    <strong>ABOUT</strong>
+                </div>
+                <div class="row profile-articles">
+                    <div class="row">
+                        <div class="col-md-auto">
+                            <div class="row">
+                                <div class="col">
+                                    <strong>Email</strong>
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <strong>Gender</strong>
-                                    </div>
-                                    <div class="col-md-auto">
-                                        <label>{{user.GENDER}}</label>
-                                    </div>
+                                <div class="col-md-auto">
+                                    <label>{{user.EMAIL}}</label>
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <strong>DoB</strong>
-                                    </div>
-                                    <div class="col-md-auto">
-                                        <label>{{user.DOB}}</label>
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <strong>Joined</strong>
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <strong>Country</strong>
-                                    </div>
-                                    <div class="col-md-auto">
-                                        <label>{{user.COUNTRY}}</label>
-                                    </div>
+                                <div class="col-md-auto">
+                                    <label>
+                                        {{user.JOIN_DATE}}
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <strong>Gender</strong>
+                                </div>
+                                <div class="col-md-auto">
+                                    <label>{{user.GENDER}}</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <strong>DoB</strong>
+                                </div>
+                                <div class="col-md-auto">
+                                    <label>{{user.DOB}}</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <strong>Country</strong>
+                                </div>
+                                <div class="col-md-auto">
+                                    <label>{{user.COUNTRY}}</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row profile-about">
-                        <strong>STORIES</strong>
-                    </div>
-                    <div class="row profile-articles">
-                        <div class="col-md-auto article-preview" name="preview1">
+                </div>
+                <div class="row profile-about ">
+                    <strong>DESCRIPTION</strong>
+                </div>
+                <div class="row profile-articles">
+                    <label>{{user.DESCRIPTION}}</label>
+                </div>
+                <div class="row profile-about">
+                    <strong>STORIES</strong>
+                </div>
+                <div class="row profile-articles">
+                    <div class="row">
+                        <div class="col-md-auto article-preview-prof" name="preview1">
                             <div class="row article-row">
-                                <div class="col-md-auto">
-                                    <img src="../../graphics/icons/article1.png" width="100px" height="100px">
+                                <div class="col">
+                                    <img src="../../graphics/icons/previewStory.png" width="100px" height="100px">
                                 </div>
-                                <div class="col-7">
+                                <div class="col-md-auto">
                                     <p class="article-preview-title">Title</p>
                                     <p>This is a placeholder for the text of the story preview.</p>
                                 </div>
                             </div>
                             <div class="row article-row">
-                                <div class="col-md-auto">
-                                    <img src="../../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
+                                <div class="col">
+                                    <img src="../../graphics/icons/user.png" class="link-icon" width="20px"
+                                        height="20px">
                                     <a href="profile.php" class="link-style">{{user.FIRST_NAME}} {{user.LAST_NAME}}</a>
                                 </div>
                                 <div class="col-md-auto">
@@ -140,10 +164,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column article-preview" name="preview1">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-auto article-preview-prof" name="preview1">
                             <div class="row article-row">
-                                <div class="col-md-auto">
-                                    <img src="../../graphics/icons/article1.png" width="100px" height="100px">
+                                <div class="col">
+                                    <img src="../../graphics/icons/previewStory.png" width="100px" height="100px">
                                 </div>
                                 <div class="col-md-auto">
                                     <p class="article-preview-title">Title</p>
@@ -151,8 +177,9 @@
                                 </div>
                             </div>
                             <div class="row article-row">
-                                <div class="col-md-auto">
-                                    <img src="../../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
+                                <div class="col">
+                                    <img src="../../graphics/icons/user.png" class="link-icon" width="20px"
+                                        height="20px">
                                     <a href="profile.php" class="link-style">{{user.FIRST_NAME}} {{user.LAST_NAME}}</a>
                                 </div>
                                 <div class="col-md-auto">
@@ -160,10 +187,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="column article-preview" name="preview1">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-auto article-preview-prof" name="preview1">
                             <div class="row article-row">
-                                <div class="col-md-auto">
-                                    <img src="../../graphics/icons/article1.png" width="100px" height="100px">
+                                <div class="col">
+                                    <img src="../../graphics/icons/previewStory.png" width="100px" height="100px">
                                 </div>
                                 <div class="col-md-auto">
                                     <p class="article-preview-title">Title</p>
@@ -171,8 +200,9 @@
                                 </div>
                             </div>
                             <div class="row article-row">
-                                <div class="col-md-auto">
-                                    <img src="../../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
+                                <div class="col">
+                                    <img src="../../graphics/icons/user.png" class="link-icon" width="20px"
+                                        height="20px">
                                     <a href="profile.php" class="link-style">{{user.FIRST_NAME}} {{user.LAST_NAME}}</a>
                                 </div>
                                 <div class="col-md-auto">
@@ -184,5 +214,7 @@
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
