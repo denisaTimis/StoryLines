@@ -9,7 +9,7 @@
     <link href="../css/common.css" rel="stylesheet">
 </head>
 <header>
-    <div class="navbar navbar-dark" style="background-color: #2F4F4F;">
+    <div class="navbar navbar-dark container" style="background-color: #2F4F4F;">
         <div class="container">
             <div class="row flex-fill justify-content-between">
                 <div class="col-md-auto">
@@ -31,33 +31,33 @@
                 </div>
                 <div class="col-md-auto">
                     <div>
-                        <a href="log-in.html" class="link-style-light">Login/ Register</a>
+                        <a href="./login" class="link-style-light">Login/ Register</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg" style="background-color: #2F4F4F;">
+    <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg container" style="background-color: #2F4F4F;">
         <li class="nav-item">
-            <a class="nav-link" href="./all">Romance</a>
+            <a class="nav-link" href="./allStories/Romance">Romance</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Horror</a>
+            <a class="nav-link" href="./allStories/Horror">Horror</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Comedy</a>
+            <a class="nav-link" href="./allStories/Comedy">Comedy</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Science Fiction</a>
+            <a class="nav-link" href="./allStories/Science Fiction">Science Fiction</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Action</a>
+            <a class="nav-link" href="./allStories/Action">Action</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Mystery</a>
+            <a class="nav-link" href="./allStories/Mystery">Mystery</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Kids</a>
+            <a class="nav-link" href="./allStories/Kids">Kids</a>
         </li>
     </ul>
 </header>
@@ -79,20 +79,20 @@
                     <p>Big bright smiling eyes- Reminds me of my maid's very old husband who loved
                      me as a child when I was about 3 years old, barely ready to take admission in school. </p>
                 </div>
-                <div class="col-md-auto">
+                <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="profile.html" class="link-style">Author</a>
+                    <a href="profile.html" class="link-style">Emily Foster</a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="./article" class="full-post">View full post...</a>
+                    <a href="./story/0" class="full-post">View full post...</a>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/like.png" width="20px" height="20px">
-                    <p>700</p>
+                    <p>234</p>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/Dislike.png" width="20px" height="20px">
-                    <p>30</p>
+                    <p>13</p>
                 </div>
             </div>
             <div class="row py-2 article-row article-preview">
@@ -105,20 +105,20 @@
                      years since a British musket ball struck me in the back and came to rest in my kidney. 
                     Five years since the surgeon cut it out through my chest, leaving me with wounds that have never fully healed.</p>
                 </div>
-                <div class="col-md-auto">
+                <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="#" class="link-style">Author</a>
+                    <a href="#" class="link-style">Emily Foster</a>
                 </div>
                 <div class="col-md-auto">
                     <a href="#" class="full-post">View full post...</a>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/like.png" width="20px" height="20px">
-                    <p>700</p>
+                    <p>632</p>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/Dislike.png" width="20px" height="20px">
-                    <p>30</p>
+                    <p>4</p>
                 </div>
             </div>
             <div class="row py-2 article-row article-preview">
@@ -131,20 +131,20 @@
                     "We need to move the lumber inside as well. Or the rain is going to spoil it." 
                     said the young man.</p>
                 </div>
-                <div class="col-md-auto">
+                <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="#" class="link-style">Author</a>
+                    <a href="#" class="link-style">Emily Foster</a>
                 </div>
                 <div class="col-md-auto">
                     <a href="#" class="full-post">View full post...</a>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/like.png" width="20px" height="20px">
-                    <p>700</p>
+                    <p>733</p>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/Dislike.png" width="20px" height="20px">
-                    <p>30</p>
+                    <p>60</p>
                 </div>
             </div>
             <div class="row py-2 article-row article-preview">
@@ -157,20 +157,20 @@
                     Ever since you picked it out, in the middle of a recession, at a heavy discount,
                     as you put it. As if it was a carton of milk about to go out of date.</p>
                 </div>
-                <div class="col-md-auto">
+                <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="#" class="link-style">Author</a>
+                    <a href="#" class="link-style">Sophie Sendors</a>
                 </div>
                 <div class="col-md-auto">
                     <a href="#" class="full-post">View full post...</a>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/like.png" width="20px" height="20px">
-                    <p>700</p>
+                    <p>179</p>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/Dislike.png" width="20px" height="20px">
-                    <p>30</p>
+                    <p>108</p>
                 </div>
             </div>
         </div>

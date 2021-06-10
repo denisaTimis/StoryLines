@@ -1,6 +1,6 @@
 <?php
     $host = 'localhost';
-    $db='wwn';
+    $db='storylines';
     $user='root';
     $password='';
     $charset='utf8mb4';

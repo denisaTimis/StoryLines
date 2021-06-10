@@ -20,7 +20,7 @@
 });
     </script>
     <header>
-    <div class="navbar navbar-dark" style="background-color: #2F4F4F;">
+    <div class="navbar navbar-dark container" style="background-color: #2F4F4F;">
         <div class="container">
             <div class="row flex-fill justify-content-between">
                 <div class="col-md-auto">
@@ -42,33 +42,33 @@
                 </div>
                 <div class="col-md-auto">
                     <div>
-                        <a href="log-in.html" class="link-style-light">Login/ Register</a>
+                        <a href="./login" class="link-style-light">Login/ Register</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg" style="background-color: #2F4F4F;">
+    <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg container" style="background-color: #2F4F4F;">
         <li class="nav-item">
-            <a class="nav-link" href="./all">Romance</a>
+            <a class="nav-link" href="./allStories/Romance">Romance</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Horror</a>
+            <a class="nav-link" href="./allStories/Horror">Horror</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Comedy</a>
+            <a class="nav-link" href="./allStories/Comedy">Comedy</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Science Fiction</a>
+            <a class="nav-link" href="./allStories/Science Fiction">Science Fiction</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Action</a>
+            <a class="nav-link" href="./allStories/Action">Action</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Mystery</a>
+            <a class="nav-link" href="./allStories/Mystery">Mystery</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Kids</a>
+            <a class="nav-link" href="./allStories/Kids">Kids</a>
         </li>
     </ul>
     </header>

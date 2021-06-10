@@ -8,7 +8,7 @@
     <link href="../css/common.css" rel="stylesheet">
   </head>
   <header>
-    <div class="navbar navbar-dark" style="background-color: #2F4F4F;">
+    <div class="navbar navbar-dark container" style="background-color: #2F4F4F;">
         <div class="container">
             <div class="row flex-fill justify-content-between">
                 <div class="col-md-auto">
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg" style="background-color: #2F4F4F;">
+    <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg container" style="background-color: #2F4F4F;">
         <li class="nav-item">
             <a class="nav-link" href="./all">General news</a>
         </li>
