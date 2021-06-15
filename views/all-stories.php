@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-auto">
                     <div>
-                        <a href="../../login" class="link-style-light">Login/ Register</a>
+                        <a href="../login" class="link-style-light">Login/ Register</a>
                     </div>
                 </div>
             </div>
@@ -79,10 +79,10 @@
                     <div class="row">
                         <div class="col-md-auto">
                             <img src="../../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                            <a href="profile.html" class="link-style">{{story.first_name}} {{story.last_name}}</a>
+                            <a href="../user/{{story.userId}}" class="link-style">{{story.first_name}} {{story.last_name}}</a>
                         </div>
                         <div class="col-6">
-                            <a href="../../article" class="full-post">View full post...</a>
+                            <a href="../story/{{story.storyId}}" class="full-post">View full post...</a>
                         </div>
                         <div class="col-md-auto article-date">
                             <img src="../../graphics/icons/date.png" class="link-icon" width="20px" height="20px">

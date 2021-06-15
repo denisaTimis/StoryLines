@@ -81,7 +81,7 @@
                 </div>
                 <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="profile.html" class="link-style">Emily Foster</a>
+                    <a href="./user/1" class="link-style">Emily Foster</a>
                 </div>
                 <div class="col-md-auto">
                     <a href="./story/0" class="full-post">View full post...</a>
@@ -107,10 +107,10 @@
                 </div>
                 <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="#" class="link-style">Emily Foster</a>
+                    <a href="./user/1" class="link-style">Emily Foster</a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="#" class="full-post">View full post...</a>
+                    <a href="./story/1" class="full-post">View full post...</a>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/like.png" width="20px" height="20px">
@@ -133,10 +133,10 @@
                 </div>
                 <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="#" class="link-style">Emily Foster</a>
+                    <a href="./user/1" class="link-style">Emily Foster</a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="#" class="full-post">View full post...</a>
+                    <a href="./story/2" class="full-post">View full post...</a>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/like.png" width="20px" height="20px">
@@ -159,10 +159,10 @@
                 </div>
                 <div class="col">
                     <img src="../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                    <a href="#" class="link-style">Sophie Sendors</a>
+                    <a href="./user/3" class="link-style">Sophie Sendors</a>
                 </div>
                 <div class="col-md-auto">
-                    <a href="#" class="full-post">View full post...</a>
+                    <a href="./story/3" class="full-post">View full post...</a>
                 </div>
                 <div class="col-md-auto">
                     <img src="../graphics/icons/like.png" width="20px" height="20px">

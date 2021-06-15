@@ -12,3 +12,17 @@
 {
     margin-left: 900px;
 }
+
+.critic-input
+{
+    width: 500px;
+    height: 80%;
+}
+
+.critic-submit
+{
+    width: 40px;
+    background-color: transparent;
+    border:none;
+    margin-left: -20px;
+}

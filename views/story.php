@@ -82,12 +82,6 @@
         </div>
         <div class="py-2 row justify-content-between">
             <div class="col-9">
-                <div class="row">
-                    <strong>Critics opinion --></strong>
-                </div>
-                <div class="row">
-                    <p>some text</p>
-                </div>
             </div>
             <div class="col-md-auto">
                 <div class="row">
@@ -109,6 +103,43 @@
             </div>
             <div class="col-md-auto">
                 <strong>{{views}} views</strong>
+            </div>
+        </div>
+        <form action="../review/add" method="post">
+            <div class="row">
+                <div class="col-md-auto">
+                    <input name="text" type="text" class="form-control critic-input"/>
+                </div>
+                <div class="col-md-auto">
+                    <input type="image" class="btn btn-light critic-submit" src="../../graphics/icons/submit.png"/>
+                </div>
+                <div class="col-md-auto">
+                    <input type="hidden" name="criticId" value="0"/>
+                </div>
+                <div class="col-md-auto">
+                    <input type="hidden" name="storyId" value="{{story}}"/>
+                </div>
+            </div>
+        </form>
+        <div class="row flex-fill review-section">
+            <div class="col">
+            {%for review in reviews%}
+                <div class="row review-row">
+                    <div class="col-md-auto review-col">
+                        <div class="row review-author-row">
+                            <div class="col-md-auto">
+                                <a href="../user/{{review.userId}}"><h3>{{review.first_name}}</h3></a>
+                            </div>
+                        </div>
+                        <div class="row review-comment-row">
+                            <div class="col-md-auto">
+                                <p>{{review.reviewText}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+             {%endfor%}
             </div>
         </div>
     </div>

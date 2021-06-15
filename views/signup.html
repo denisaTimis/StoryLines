@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-md-auto">
                     <div>
-                        <a href="./user/0" class="link-style-light"><img src="../graphics/icons/profile.png" /></a>
+                        <a href="./login" class="link-style-light">Login/ Register</a>
                     </div>
                 </div>
             </div>
@@ -38,25 +38,44 @@
     </div>
     <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg container" style="background-color: #2F4F4F;">
         <li class="nav-item">
-            <a class="nav-link" href="./all">General news</a>
+            <a class="nav-link" href="./allStories/Romance">Romance</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Popular</a>
+            <a class="nav-link" href="./allStories/Horror">Horror</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Business</a>
+            <a class="nav-link" href="./allStories/Comedy">Comedy</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Tech</a>
+            <a class="nav-link" href="./allStories/Science Fiction">Science Fiction</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Politics</a>
+            <a class="nav-link" href="./allStories/Action">Action</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="allNews.html">Entertainment</a>
+            <a class="nav-link" href="./allStories/Mystery">Mystery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./allStories/Kids">Kids</a>
         </li>
     </ul>
 </header>
+<script type="text/javascript" language="javascript">
+   function manage(txt) {
+    var bt = document.getElementById('submit');
+    var ele = document.getElementsByTagName('input'); 
+
+    for (i = 0; i < ele.length; i++) {
+      if ((ele[i].type == 'text' || ele[i].type == 'password') && ele[i].value == '') {
+            bt.disabled = true; 
+            return false;
+      }
+      else {
+          bt.disabled = false;  
+        }
+    }
+  }    
+</script>
   <body>
     <div class="container  py-3 login-container">
        <div class="row justify-content-center">
@@ -64,53 +83,48 @@
          <h1>Sign Up</h1>
         </div>
        </div>
-      <form method="post" action="#">
+      <form method="post" action="./register">
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="firstName" type="text" class="form-control login-input-small" placeholder="First Name"/>
+          <input name="first_name" type="text" class="form-control login-input-small" placeholder="First Name" onkeyup="manage(this)"/>
           </div>
           <div class="col-md-auto">
-          <input name="lastName" type="text" class="form-control login-input-small" placeholder="Last Name"/>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-auto">
-          <input name="username" type="text" class="form-control login-input" placeholder="Username"/>
+          <input name="last_name" type="text" class="form-control login-input-small" placeholder="Last Name" onkeyup="manage(this)"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="email" type="text" class="form-control login-input" placeholder="Email"/>
+          <input name="username" type="text" class="form-control login-input" placeholder="Username" onkeyup="manage(this)"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="cEmail" type="text" class="form-control login-input" placeholder="Confirm email"/>
+          <input name="email" type="text" class="form-control login-input" placeholder="Email" onkeyup="manage(this)"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="pass" type="password" class="form-control login-input" placeholder="Password"/>
+          <input name="password" type="password" class="form-control login-input" placeholder="Password" onkeyup="manage(this)"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="cPass" type="text" class="form-control login-input" placeholder="Confirm password"/>
+          <input name="cPass" type="text" class="form-control login-input" placeholder="Confirm password" onkeyup="manage(this)"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="gender" type="text" class="form-control login-input" placeholder="Gender"/>
+          <input name="gender" type="text" class="form-control login-input" placeholder="Gender" onkeyup="manage(this)"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="bday" type="date" class="form-control login-input" placeholder="DoB: yyyy-mm-dd"/>
+          <input name="dob" type="date" class="form-control login-input"  value="2011-09-29"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="country" type="text" class="form-control login-input" placeholder="Country"/>
+          <input name="country" type="text" class="form-control login-input" placeholder="Country" onkeyup="manage(this)"/>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -120,16 +134,16 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto end-type-section">
-            <input name="accType" type="radio" value="author"/><label>Author</label>
+            <input name="type" type="radio" value="author" checked="true"/><label>Author</label>
           </div>
           <div class="col-md-auto end-type-section">
-            <input name="accType" type="radio" value="critic"/><label>Critic</label>
+            <input name="type" type="radio" value="critic"/><label>Critic</label>
           </div>
         </div>
                 
         <div class="row justify-content-center">
             <div class="col-md-auto">
-                <input name="submit" class="btn btn-light signup-button" type="submit" value="SignUp" />
+                <input name="submit" id="submit" class="btn btn-light signup-button" type="submit" value="Submit" disabled="disabled" />
             </div>
         </div>
       </form>

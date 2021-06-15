@@ -62,18 +62,15 @@
     </ul>
     </header>
     <body>
-        <div class="py-5 container">
-            <div class="row justify-content-center">
-                <div class="col-md-auto shadow-lg profile-about-div">
-                    <div class="row name-row">
-                        <div class="col-md-auto">
-                            <h1>{{user.FIRST_NAME}} {{user.LAST_NAME}}</h1>
-                        </div>
-                    </div>
-                    <div class="row type-row">
-                        <div class="col-md-auto">
-                            <h4>Author</h4>
-                        </div>
+    <div class="py-5 container">
+        <div class="row justify-content-center">
+            <div class="col-md-auto add-profile-img">
+                <img src="../../graphics/icons/user.png" width="80px" height="80px">
+            </div>
+            <div class="col-md-auto shadow-lg profile-about-div">
+                <div class="row name-row">
+                    <div class="col-md-auto">
+                        <h1>{{user.FIRST_NAME}} {{user.LAST_NAME}}</h1>
                     </div>
                 </div>
                 <div class="row type-row">
@@ -159,7 +156,7 @@
                                         height="20px">
                                     <a href="profile.php" class="link-style">{{user.FIRST_NAME}} {{user.LAST_NAME}}</a>
                                 </div>
-                                <div class="col-md-auto">
+                                <div class="col">
                                     <a href="article.html" class="full-post">View full post...</a>
                                 </div>
                             </div>
@@ -182,7 +179,7 @@
                                         height="20px">
                                     <a href="profile.php" class="link-style">{{user.FIRST_NAME}} {{user.LAST_NAME}}</a>
                                 </div>
-                                <div class="col-md-auto">
+                                <div class="col">
                                     <a href="article.html" class="full-post">View full post...</a>
                                 </div>
                             </div>
@@ -205,8 +202,8 @@
                                         height="20px">
                                     <a href="profile.php" class="link-style">{{user.FIRST_NAME}} {{user.LAST_NAME}}</a>
                                 </div>
-                                <div class="col-md-auto">
-                                    <a href="./story" class="full-post">View full post...</a>
+                                <div class="col">
+                                    <a href="article.html" class="full-post">View full post...</a>
                                 </div>
                             </div>
                         </div>
