@@ -64,7 +64,6 @@
 </header>
     <body>
         <div class="py-5 row container">
-        {% for story in stories %}
             <div class=" row py-2 container">
                 <div class="column article-div" name="preview1">
                     <div class="row">
@@ -72,30 +71,31 @@
                             <img src="../../graphics/icons/previewStory.png" width="100px" height="100px">
                         </div>
                         <div class="col">
-                            <p class="article-preview-title">{{story.title}}</p>
-                                <p>{{story.ptext}}</p>
+                            <p class="article-preview-title"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-auto">
                             <img src="../../graphics/icons/user.png" class="link-icon" width="20px" height="20px">
-                            <a href="../user/{{story.userId}}" class="link-style">{{story.first_name}} {{story.last_name}}</a>
+                            <a href="../user/{{story.userId}}" class="link-style"></a>
                         </div>
                         <div class="col-6">
                             <a href="../story/{{story.storyId}}" class="full-post">View full post...</a>
                         </div>
                         <div class="col-md-auto article-date">
                             <img src="../../graphics/icons/date.png" class="link-icon" width="20px" height="20px">
-                            <a href="#" class="link-style">{{story.post_date}}</a>
+                            <a href="#" class="link-style"></a>
                         </div>
                         <div class="col-md-auto">
                             <img src="../../graphics/icons/eye.png" class="link-icon" width="20px" height="20px">
-                            <a href="#" class="link-style">{{story.views}} views</a>
+                            <a href="#" class="link-style"></a>
                         </div>
                     </div>
                 </div>        
             </div>
-            {% endfor %}
         </div>
     </body>
+    <script>
+        
+    </script>
 </html>

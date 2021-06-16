@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Login</title>
+    <title>World Wide News</title>
     <link rel="icon" href="../graphics/icons/globe.png" />
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/account.css" rel="stylesheet">
+    <link href="../css/article.css" rel="stylesheet">
     <link href="../css/common.css" rel="stylesheet">
 </head>
 <header>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-md-auto">
                     <div>
-                        <a href="./login" class="link-style-light">Login/ Register</a>
+                        <a href="/login" class="link-style-light">Login/ Register</a>
                     </div>
                 </div>
             </div>
@@ -39,63 +39,54 @@
     </div>
     <ul class="nav nav-tabs justify-content-center navbar-dark shadow-lg container" style="background-color: #2F4F4F;">
         <li class="nav-item">
-            <a class="nav-link" href="./allStories/Romance">Romance</a>
+            <a class="nav-link" href="../allStories/Romance">Romance</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./allStories/Horror">Horror</a>
+            <a class="nav-link" href="../allStories/Horror">Horror</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./allStories/Comedy">Comedy</a>
+            <a class="nav-link" href="../allStories/Comedy">Comedy</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./allStories/Science Fiction">Science Fiction</a>
+            <a class="nav-link" href="../allStories/Science Fiction">Science Fiction</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./allStories/Action">Action</a>
+            <a class="nav-link" href="../allStories/Action">Action</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./allStories/Mystery">Mystery</a>
+            <a class="nav-link" href="../allStories/Mystery">Mystery</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./allStories/Kids">Kids</a>
+            <a class="nav-link" href="../allStories/Kids">Kids</a>
         </li>
     </ul>
 </header>
 
 <body>
-    <div class="container py-3 login-container">
-        <div class="row justify-content-center">
+    <div class="py-5 container shadow-lg">
+    {%if correctData %}
+        <div class="row">
             <div class="col-md-auto">
-                <img src="../graphics/icons/log-in.png" width="50px" height="50px">
+                <strong>You logged in successfully!</strong>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col-md-auto">
-                <h1>Login</h1>
+                <a href="./" class="link-style-light">Home {{loggedUserId}}</a>
             </div>
         </div>
-        <form method='GET' action="./logininfo">
-        <div class="row justify-content-center">
+    {%else%}
+        <div class="row">
             <div class="col-md-auto">
-                <input name="username" type="text" class="form-control login-input" placeholder="Username" />
+                <strong>Wrong password or username entered!</strong>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row">
             <div class="col-md-auto">
-                <input name="password" type="text" class="form-control login-input" placeholder="Password" />
+                <a href="./login" class="link-style-light">Back to login</a>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-md-auto">
-                <input name="submit" class="btn btn-light login-button" type="submit" value="Login" />
-            </div>
-        </div>
-        </form>
-        <div class="row justify-content-center">
-            <div class="col-md-auto">
-                <a href="./signup"><input class="btn btn-light signup-link" type="button" value="SignUp" /></a>
-            </div>
-        </div>
+    {%endif%}
     </div>
 </body>
 

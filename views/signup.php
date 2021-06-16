@@ -60,22 +60,6 @@
         </li>
     </ul>
 </header>
-<script type="text/javascript" language="javascript">
-   function manage(txt) {
-    var bt = document.getElementById('submit');
-    var ele = document.getElementsByTagName('input'); 
-
-    for (i = 0; i < ele.length; i++) {
-      if ((ele[i].type == 'text' || ele[i].type == 'password') && ele[i].value == '') {
-            bt.disabled = true; 
-            return false;
-      }
-      else {
-          bt.disabled = false;  
-        }
-    }
-  }    
-</script>
   <body>
     <div class="container  py-3 login-container">
        <div class="row justify-content-center">
@@ -86,35 +70,35 @@
       <form method="post" action="./register">
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="first_name" type="text" class="form-control login-input-small" placeholder="First Name" onkeyup="manage(this)"/>
+          <input name="first_name" type="text" class="form-control login-input-small" placeholder="First Name"/>
           </div>
           <div class="col-md-auto">
-          <input name="last_name" type="text" class="form-control login-input-small" placeholder="Last Name" onkeyup="manage(this)"/>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-auto">
-          <input name="username" type="text" class="form-control login-input" placeholder="Username" onkeyup="manage(this)"/>
+          <input name="last_name" type="text" class="form-control login-input-small" placeholder="Last Name"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="email" type="text" class="form-control login-input" placeholder="Email" onkeyup="manage(this)"/>
+          <input name="username" type="text" class="form-control login-input" placeholder="Username"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="password" type="password" class="form-control login-input" placeholder="Password" onkeyup="manage(this)"/>
+          <input name="email" type="text" class="form-control login-input" placeholder="Email"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="cPass" type="text" class="form-control login-input" placeholder="Confirm password" onkeyup="manage(this)"/>
+          <input name="password" type="password" class="form-control login-input" placeholder="Password"/>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="gender" type="text" class="form-control login-input" placeholder="Gender" onkeyup="manage(this)"/>
+          <input name="cPass" type="text" class="form-control login-input" placeholder="Confirm password"/>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+          <input name="gender" type="text" class="form-control login-input" placeholder="Gender"/>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -124,7 +108,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-          <input name="country" type="text" class="form-control login-input" placeholder="Country" onkeyup="manage(this)"/>
+          <input name="country" type="text" class="form-control login-input" placeholder="Country"/>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -143,7 +127,7 @@
                 
         <div class="row justify-content-center">
             <div class="col-md-auto">
-                <input name="submit" id="submit" class="btn btn-light signup-button" type="submit" value="Submit" disabled="disabled" />
+                <input name="submit" id="submit" class="btn btn-light signup-button" type="submit" value="Submit"/>
             </div>
         </div>
       </form>

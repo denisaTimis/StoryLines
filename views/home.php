@@ -31,7 +31,11 @@
                 </div>
                 <div class="col-md-auto">
                     <div>
-                        <a href="./login" class="link-style-light">Login/ Register</a>
+                        {% if loggedUserId >= 0 %}
+                        <a href="./user/{{loggedUserId}}" class="link-style-light"><img src="../graphics/icons/profile.png" /></a> {{loggedUserId}}
+                        {% else %}
+                        <a href="./login" class="link-style-light">Login/ Register</a> {{loggedUserId}}
+                        {% endif %}
                     </div>
                 </div>
             </div>
