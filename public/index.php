@@ -783,15 +783,21 @@ $app->put('/editstory/{id}', function( Request $request, Response $response, arr
 
       $result = $sql->execute();
       $paragraphs=explode("\n",$text);
+      
+      $pageOrder=1;
         foreach($paragraphs as $paragraph)
         {
-              $sqlP = $pdo->prepare("UPDATE paragraph SET text=:text WHERE id=:id)");
+              $sqlP = $pdo->prepare("UPDATE paragraph SET text=:text WHERE story_id=:id AND page_order=:pageOrder");
               $sqlP->bindParam(':text', $paragraph);
-
+              $sqlP->bindParam(':pageOrder', $pageOrder);
+              $sqlP->bindParam(':id', $id);
+            
               $resultP = $sqlP->execute();
+              $pageOrder=$pageOrder+1;
         }
 
       $response->getBody()->write(json_encode($result));
+      echo $type;
       return $response
         ->withHeader('content-type','application/json')
         ->withStatus(200);
